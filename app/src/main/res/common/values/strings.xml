@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ok">Ok</string>
+    <string name="hint_input_search">Search in Dindin</string>
+    <string name="lb_no_result_search">No data</string>
+    <string name="hint_input_keyword_search">Input somethings to search</string>
+    <string name="lb_loading">Loading...</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_expired">Expired</string>
+</resources>

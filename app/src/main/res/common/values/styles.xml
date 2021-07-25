@@ -1,0 +1,190 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <item name="md_color_button_text">@color/colorSecondary</item>
+        <item name="md_corner_radius">@dimen/dialog_cornor_radius</item>
+        <item name="md_font_title">@font/quicksand_semibold</item>
+        <item name="md_font_body">@font/quicksand_semibold</item>
+        <item name="md_font_button">@font/quicksand_semibold</item>
+    </style>
+
+    <style name="DialogAnimation" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="Font.QuickSandMedium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="Font.QuickSandRegular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+    </style>
+
+    <style name="Font.QuickSandSemiBold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+    </style>
+
+    <style name="Font.QuickSandBold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+    <style name="Font.TimeNewRomanRegularItalic" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/times_new_roman_corsivo</item>
+    </style>
+
+    <style name="HeaderStyle" parent="Font.QuickSandMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="TitleBarText" parent="Font.QuickSandSemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="TextError" parent="Font.QuickSandMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorRed</item>
+    </style>
+
+    <style name="TextRegular" parent="Font.QuickSandRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="TextBold" parent="Font.QuickSandBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="TextSemiBold" parent="Font.QuickSandSemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="TextMedium" parent="Font.QuickSandMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <style name="ActionHighLight">
+        <item name="colorControlActivated">
+            @color/textColorLight
+        </item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Font.QuickSandMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/input_text_height</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">@dimen/contain_padding</item>
+        <item name="android:paddingEnd">@dimen/contain_padding</item>
+        <item name="android:paddingBottom">@dimen/contain_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="paddingStart">0dp</item>
+        <item name="android:textColor">@drawable/textcolor_gray_selector</item>
+        <item name="android:background">@drawable/bg_new_edittext_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Font.QuickSandSemiBold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/btn_primary_selector</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/btn_primary_text_color_selector</item>
+    </style>
+
+    <style name="EditTextStyle.Password" parent="EditTextStyle">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EditTextStyle.Email" parent="EditTextStyle">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="EditTextStyle.Name" parent="EditTextStyle">
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="EditTextStyle.PhoneNumber" parent="EditTextStyle">
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="textAllCaps">false</item>
+        <item name="tabTextAppearance">@style/TextMedium</item>
+        <item name="tabSelectedTextColor">@color/colorSecondary</item>
+        <item name="tabTextColor">@color/textColorLight</item>
+    </style>
+
+
+    <style name="RoundCornerAvatarSmall">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:src">#EEE</item>
+        <item name="riv_corner_radius">@dimen/dp5</item>
+    </style>
+
+    <style name="RoundCornerAvatarLarge">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:src">#EEE</item>
+        <item name="riv_corner_radius">@dimen/dp5</item>
+    </style>
+
+    <style name="EditTextStyle.Search" parent="Font.QuickSandMedium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

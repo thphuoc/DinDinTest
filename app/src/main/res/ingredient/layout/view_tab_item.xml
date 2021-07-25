@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlTabItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTabText"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/contain_padding"
+        android:paddingTop="@dimen/vertical_space_medium"
+        android:paddingEnd="@dimen/contain_padding"
+        android:paddingBottom="@dimen/vertical_space_medium"
+        android:text="Tab name" />
+
+    <View
+        android:id="@+id/viewIndicator"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvTabText"
+        android:layout_alignStart="@id/tvTabText"
+        android:layout_alignEnd="@id/tvTabText"
+        android:background="@color/colorSecondary" />
+</RelativeLayout>

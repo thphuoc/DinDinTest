@@ -1,0 +1,50 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.5.21'
+    repositories {
+//        maven { url 'https://dl.google.com/dl/android/maven2' }
+        maven { url "https://plugins.gradle.org/m2/" } // <-- Repo of detekt
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //Don\'t upgrade google-service. Version 4.3.1 have a warning while build
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+        }
+        maven { url 'https://oss.jfrog.org/libs-snapshot' }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+ext {
+    // Library version
+    libCompileSdkVersion = 30
+    libMinSdkVersion = 23
+    libTargetSdkVersion = 30
+    libBuildToolsVersion = "30.0.2"
+    libSupportVersion = '25.4.0'
+    libPublishVersionCode = 22
+    libPublishVersionName = '1.0.3'
+    libPublishGroupName = 'com.mindorks.android'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

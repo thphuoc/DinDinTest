@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/contain_padding">
+
+    <TextView
+        android:id="@+id/tvNoResultSearch"
+        style="@style/TextSemiBold"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/contain_padding"
+        android:gravity="center"
+        android:padding="@dimen/contain_padding"
+        android:text="@string/hint_input_keyword_search"
+        android:textColor="@color/textColorLightWhite" />
+
+    <ImageView
+        android:id="@+id/imgEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_empty_search" />
+</LinearLayout>

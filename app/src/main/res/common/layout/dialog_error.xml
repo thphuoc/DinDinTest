@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clipToPadding="false"
+    android:padding="@dimen/contain_padding">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baseBackgroundColor"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/contain_padding">
+
+            <ScrollView
+                android:id="@+id/svMessage"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvDialogMessage"
+                        style="@style/TextMedium"
+                        android:textColor="@color/textColorDark"
+                        tools:text="Do you want to exit the app?" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/btnDialogPositive"
+                style="@style/PrimaryButton"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/vertical_space_xlarge"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                tools:text="Ok" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

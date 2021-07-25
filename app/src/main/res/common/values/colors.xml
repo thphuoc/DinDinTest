@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#E2E2E2</color>
+    <color name="colorSecondary">#CC0178FF</color>
+    <color name="colorSecondaryLight">#B30178FF</color>
+    <color name="colorSecondaryVeryLight">#84CEFB</color>
+    <color name="colorSecondaryDark">#026CE4</color>
+    <color name="btnDisableColor">#DDD</color>
+    <color name="colorActive">#4CAF50</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="baseBackgroundColor">#FFFFFF</color>
+    <color name="backgroundDark">#D2D6DA</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#006eb3</color>
+    <color name="colorArticle">#4CAF50</color>
+    <color name="colorHealth">#f2c77c</color>
+    <color name="colorNotificationUnreadMessage">#3384CEFB</color>
+    <color name="status_bar_color">#22000000</color>
+    <color name="colorSelected">#33C3DCFA</color>
+
+    <color name="textColorDark">#333</color>
+    <color name="textColorGray">#444</color>
+    <color name="textColorLight">#666666</color>
+    <color name="textColorXLight">#707070</color>
+    <color name="textColorLightWhite">#AAA</color>
+
+    <color name="black">#000</color>
+
+    <color name="borderColorLight">#DDD</color>
+
+    <color name="textColorRed">#BF0016</color>
+    <color name="textColorLove">#F44336</color>
+    <color name="orange">#FF9800</color>
+
+    <color name="listItemSeparate">#EEE</color>
+    <color name="colorRating">#fcc02e</color>
+    <color name="white">#FFF</color>
+    <color name="grayLight">#DDD</color>
+    <color name="refresh_color">#55DDDDDD</color>
+
+    <color name="stroke_color_grey">#AAA</color>
+    <color name="floating_color_shadow">#22000000</color>
+</resources>

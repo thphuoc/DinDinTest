@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple
+            android:color="@color/colorPrimaryDark">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/colorSecondaryLight" />
+                    <corners android:radius="@dimen/btn_oval_border_radius" />
+                </shape>
+            </item>
+
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/colorSecondary" />
+                    <corners android:radius="@dimen/btn_oval_border_radius" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btnDisableColor" />
+            <corners android:radius="@dimen/btn_oval_border_radius" />
+        </shape>
+    </item>
+</selector>

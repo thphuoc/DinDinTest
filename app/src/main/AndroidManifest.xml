@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dindintest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".RootApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="dinDin"
+        android:logo="@mipmap/ic_launcher"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.screens.orders.OrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.screens.ingredient.IngredientActivity" />
+    </application>
+
+</manifest>

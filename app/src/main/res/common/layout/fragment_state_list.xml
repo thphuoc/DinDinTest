@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.kinst.jakub.view.SimpleStatefulLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mindorks.placeholderview.InfinitePlaceHolderView
+            android:id="@+id/placeHolderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/navigation_bar_height" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</cz.kinst.jakub.view.SimpleStatefulLayout>
